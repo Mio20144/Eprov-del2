@@ -10,8 +10,9 @@ namespace Eprov_del2
     {
         public CleanCar()
         {
+            //genererar antal passagerare
             passengers = generator.Next(1, 4);
-
+            //mängd kontraband
             contrabandAmount = 0;
             alreadyChecked = false;
         }

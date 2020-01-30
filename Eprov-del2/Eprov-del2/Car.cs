@@ -16,6 +16,7 @@ namespace Eprov_del2
 
         public bool Examine()
         {
+            // om kontraband är mer än 1 så returneras true, annars false
             if (contrabandAmount > 0)
             {
                 Console.WriteLine("Du hittade " + contrabandAmount + " kontraband");
