@@ -1,0 +1,32 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Eprov_del2
+{
+    class Car
+    {
+        
+        public int passengers;
+        public int contrabandAmount;
+        public bool alreadyChecked;
+        public Random generator = new Random();
+
+        public bool Examine()
+        {
+            if (contrabandAmount > 0)
+            {
+                Console.WriteLine("Du hittade " + contrabandAmount + " kontraband");
+                return true;
+            }
+            else
+            {
+                Console.WriteLine("Du hittade inga kontraband");
+                return false;
+            }
+        }
+        
+    }
+}
